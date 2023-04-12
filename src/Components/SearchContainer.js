@@ -14,7 +14,6 @@ const SearchContainer = () => {
           <button className="search-btn">Search</button>
         </div>
       )}
-      
     </AppContext.Consumer>
   );
 };

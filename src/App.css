@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  /* width: 100vw; */
   height: 100vh;
   background: linear-gradient(
     0deg,
@@ -12,8 +11,6 @@
     rgba(53, 57, 61, 1) 80%,
     rgba(33, 37, 41, 1) 92%
   );
-  padding: 0;
-  margin: 0;
   width: 100%;
 }
 
@@ -29,7 +26,9 @@
   color: white;
   gap: 2rem;
 }
-html,
-body {
-  width: 100%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
