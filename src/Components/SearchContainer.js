@@ -1,3 +1,4 @@
+
 import { AppContext } from "../App.js";
 
 const SearchContainer = () => {
@@ -7,11 +8,11 @@ const SearchContainer = () => {
         <div className="search-container">
           <input
             type="text"
-            placeholder="Search GitHub User"
+            placeholder="Search GitHub User..."
             className="search-input"
             onChange={(e) => value(e.target.value)}
           ></input>
-          <button className="search-btn">Search</button>
+          <button className="search-btn btn btn-dark">Search</button>
         </div>
       )}
     </AppContext.Consumer>
