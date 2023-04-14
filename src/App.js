@@ -15,10 +15,15 @@ function App() {
   const [userDetails, setUserDetails] = useState({});
   const [didClicked, setDidClick] = useState(false)
 
+  const config = {
+    headers:{
+      Authorization: "Bearer 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"
+    }
+  };
   useEffect(() => {
     if (input !== " ") {
       axios
-        .get(`https://api.github.com/search/users?q=${input}`)
+        .get(`https://api.github.com/search/users?q=${input}`, config)
         .then((res) => {
           console.log(res.data);
           setResultsFromApi(res.data.items);

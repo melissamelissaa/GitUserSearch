@@ -77,7 +77,7 @@ border-radius: 50%;
   justify-content: end;
   gap: 2px;
 }
-.row-in-ud {
+.row-in-ud, .name-class {
   margin: 2rem 0 0 0.7rem;
 }
 .icon {
@@ -86,4 +86,27 @@ border-radius: 50%;
 }
 a {
   color: black;
+}
+@media screen and (min-width: 600px) {
+  .small-item-div {
+    margin-left: 11.6%;
+    width:96%;
+  }
+  .small-pic {
+    width: 3.6%;
+  }
+  .user-details-container {
+    width: 40%;
+    margin-left: 26%;
+    margin-top: 1rem;
+  }
+  .imgInDetails {
+    width: 20%;
+  }
+  .row-in-ud {
+    margin-right: 4rem;
+  }
+  .name-class {
+    margin-right: 1rem;
+  }
 }

@@ -18,7 +18,7 @@ const UserDetails = (props) => {
     return (
       <div className="user-details-container">
         <img className="imgInDetails" src={props.userDetails.avatar_url} />
-        <h1 class="text-in-user-details row-in-ud">
+        <h1 class="text-in-user-details name-class">
           {props.userDetails.login} / {props.userDetails.name}
         </h1>
         <div className="components-div-in-ud">
