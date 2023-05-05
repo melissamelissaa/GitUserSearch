@@ -4,7 +4,7 @@ const SearchResults = (props) => {
   const getUserDetails = (url) => {
     axios.get(url).then((res) => {
       props.setUserDetails(res.data);
-      if (props.didClicked === false) props.setDidClick(true);
+      if (props.diduserclicked === false) props.setDidClick(true);
     });
   };
   

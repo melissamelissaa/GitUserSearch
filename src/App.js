@@ -2,7 +2,7 @@ import "./App.css";
 
 import SearchContainer from "./Components/SearchContainer";
 import SearchResults from "./Components/SearchResults";
-import UserDètails from "./Components/UserDetails";
+import UserDetails from "./Components/UserDetails";
 
 import { useState, createContext, useEffect } from "react";
 import axios from "axios";
@@ -13,7 +13,7 @@ function App() {
   const [input, setInput] = useState(" ");
   const [resultsFromApi, setResultsFromApi] = useState([]);
   const [userDetails, setUserDetails] = useState({});
-  const [didClicked, setDidClick] = useState(false)
+  const [didUserClicked, setDidUserClick] = useState(false)
 
   const config = {
     headers:{
@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     if (input !== " ") {
       axios
-        .get(`https://api.github.com/search/users?q=${input}`, config)
+        .get(`https://api.github.com/search/users?q=${input}`)
         .then((res) => {
           console.log(res.data);
           setResultsFromApi(res.data.items);
@@ -38,12 +38,12 @@ function App() {
         <SearchResults 
          resultsFromApi={resultsFromApi}
          setUserDetails={setUserDetails}
-         setDidClick={setDidClick}
-         didClicked={didClicked}
+         setDidClick={setDidUserClick}
+         diduserclicked={didUserClicked}
          />
-        <userDetails 
+        <UserDetails 
         userDetails={userDetails} 
-        didClicked={didClicked}
+        diduserclicked={didUserClicked}
         />
       </AppContext.Provider>
     </div>

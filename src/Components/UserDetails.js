@@ -14,7 +14,7 @@ const AmountOfSomeData = (props) => {
 };
 
 const UserDetails = (props) => {
-  if (props.didClicked) {
+  if (props.diduserclicked) {
     return (
       <div className="user-details-container">
         <img className="imgInDetails" src={props.userDetails.avatar_url} />
