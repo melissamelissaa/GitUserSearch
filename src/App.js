@@ -2,7 +2,7 @@ import "./App.css";
 
 import SearchContainer from "./Components/SearchContainer";
 import SearchResults from "./Components/SearchResults";
-import UserDetails from "./Components/UserDetails";
+import UserDètails from "./Components/UserDetails";
 
 import { useState, createContext, useEffect } from "react";
 import axios from "axios";
@@ -17,7 +17,7 @@ function App() {
 
   const config = {
     headers:{
-      Authorization: "Bearer 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"
+      Authorization: "Bearer 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"
     }
   };
   useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
          setDidClick={setDidClick}
          didClicked={didClicked}
          />
-        <UserDetails 
+        <userDetails 
         userDetails={userDetails} 
         didClicked={didClicked}
         />
