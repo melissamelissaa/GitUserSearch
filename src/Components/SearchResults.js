@@ -11,7 +11,7 @@ const SearchResults = (props) => {
     return (
       <div className="small-item-div">
         {props.resultsFromApi.map((user, i) =>
-          i < 6 ? (
+          i < 5 ? (
             <div
               className="small-result"
               onClick={() => getUserDetails(user.url)}

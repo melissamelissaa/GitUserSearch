@@ -1,13 +1,20 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body, html {
+  width: 100vw;
 
+}
 .App {
+  
+  width: 100vw;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(
+  background-image: url(imageForMobile.jpeg);
+  /* background: linear-gradient(
     0deg,
     rgba(248, 249, 250, 1) 6%,
     rgba(206, 212, 218, 1) 27%,
@@ -17,6 +24,7 @@
     rgba(53, 57, 61, 1) 80%,
     rgba(33, 37, 41, 1) 92%
   );
+} */
 }
 
 .small-pic {
@@ -32,7 +40,7 @@
   gap: 0.5rem;
   padding: 5px;
   background-color: rgb(26, 25, 25);
-  width: 73%
+  width: 70vw;
 }
 
 .imgInDetails {
@@ -40,14 +48,14 @@ width: 30%;
 border-radius: 50%;
 }
 .search-container, .app {
-  width: 100%;
+  width: 100vw;
 }
 
 .search-input {
   background-color: #495057;
   color: white;
-  width: 70%;
-  height: 2.3rem;
+  width: 70vw;
+  height: 5vh;
   border: none;
   border-bottom: 1px solid white;
   background-color: transparent;
@@ -58,7 +66,7 @@ border-radius: 50%;
 }
 .small-item-div {
   margin-left: 0.7rem;
- 
+  /* border-radius: ; */
 }
 .user-details-container {
   background-color: #e2e4e6;
@@ -89,20 +97,25 @@ a {
   color: black;
 }
 @media screen and (min-width: 600px) {
+  .App {
+    height: 130vh;
+    background-image: url(image.png);
+  }
   .small-item-div {
     margin-left: 11.6%;
-    width:96%;
+    width: 40%;
   }
+
   .small-pic {
     width: 3.6%;
   }
   .user-details-container {
-    width: 40%;
+    width: 40vw;
     margin-left: 26%;
     margin-top: 1rem;
   }
   .imgInDetails {
-    width: 20%;
+    width: 20vw;
   }
   .row-in-ud {
     margin-right: 4rem;
