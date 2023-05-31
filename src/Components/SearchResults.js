@@ -11,6 +11,7 @@ const SearchResults = (props) => {
     return (
       <div className="small-item-div">
         {props.resultsFromApi.map((user, i) =>
+        //search result will not be more than 5
           i < 5 ? (
             <div
               className="small-result"
